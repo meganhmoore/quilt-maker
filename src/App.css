@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.target-square {
+    position: inherit;
+    text-align: center;
+    background: #ee8;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+.target-triangle {
+  position: inherit;
+  text-align: center;
+  font-weight: bold;
+	width: 0;
+	height: 0;
+	border-top: 100px solid #ee8;
+	border-right: 100px solid transparent;
+  box-sizing: border-box;
+}
+
+.target-circle {
+  position: inherit;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+  width: 50px;
+  background-color: #ee8;
+  border-radius: 50%;
+}
+
+.target-semi-circle {
+  position: inherit;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #ee8;
+}
+
+.target-arc {
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: #ee8;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
+}
