@@ -1,10 +1,9 @@
 import React from 'react';
 import Moveable from 'react-moveable';
+import {shapeStyles} from './styles.js';
 
 export function Shape(props) {
-  const text = props.text;
-  const height = props.height;
-  const width = props.width;
+  const shape = props.shape;
   const [target, setTarget] = React.useState();
   const [frame, setFrame] = React.useState({
     translate: [0,0],
@@ -13,12 +12,12 @@ export function Shape(props) {
   });
 
   React.useEffect(() => {
-      setTarget(document.querySelector(".target-triangle"));
+      setTarget(document.querySelector(".target"));
   }, []);
 
   return(
     <div className="container">
-      <div className="target-triangle">{text}</div>
+      <div className="target" style={shapeStyles[shape]}>{shape}</div>
       <Moveable
           target={target}
           resizable={true}

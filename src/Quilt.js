@@ -1,13 +1,6 @@
 import React from 'react';
 import {Shape} from './Shape.js';
-
-const quiltStyles = {
-  "pillowcase": {width: '20vw' , height: '20vw'},
-  "crib": {width: '30vw' , height: '40vw'}, //66,
-  "twin": {width: '40vw' , height: '60vw'}, //60,
-  "queen": {width: '60vw' , height: '70vw'}, //55,
-  "king": {width: '70vw' , height: '70vw'} //50,
-};
+import {quiltStyles} from './styles.js';
 
 
 export class Quilt extends React.Component {
@@ -36,7 +29,7 @@ export class Quilt extends React.Component {
   render() {
     return(
       <div style={this.state}>
-      <Shape text="blah" type="square"/>
+        <Shape shape="arc"/>
       </div>
     );
   };

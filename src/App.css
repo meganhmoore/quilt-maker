@@ -37,7 +37,7 @@
   }
 }
 
-.target-square {
+/* .target-square {
     position: inherit;
     text-align: center;
     background: #ee8;
@@ -47,9 +47,9 @@
     box-sizing: border-box;
     width: 100px;
     height: 100px;
-}
+} */
 
-.target-triangle {
+/* .target-triangle {
   position: inherit;
   text-align: center;
   font-weight: bold;
@@ -68,9 +68,9 @@
   width: 50px;
   background-color: #ee8;
   border-radius: 50%;
-}
+} */
 
-.target-semi-circle {
+/* .target-semi-circle {
   position: inherit;
   text-align: center;
   font-weight: bold;
@@ -83,10 +83,10 @@
 
 .target-arc {
     width: 200px;
-    height: 100px; /* as the half of the width */
+    height: 100px;
     background-color: #ee8;
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px; 
     border: 10px solid gray;
     border-bottom: 0;
-}
+} */
