@@ -11,13 +11,29 @@ const aStyle = {
   color: styles.textColor
 }
 
+const buttonStyle = {
+  background: 'thistle',
+  fontSize: '20px',
+  padding: '10px 20px',
+  borderRadius: '5px',
+  margin: '10px 2px',
+  cursor: 'pointer',
+  display: 'inline-block'
+}
+
 
 function App() {
+  // TODO: add function to render example photo if button is clicked
+  // TODO: add function to render quilt container is quilt button is clicked
   return (
     <div className="App">
       <header className="App-header">
+      <div>
+        <button style={buttonStyle}>Examples</button>
+        <button style={buttonStyle}>Design Your Quilt</button>
+      </div>
         <p style={pStyle}>
-          Make your dream quilt.
+          Design your dream quilt.
         </p>
         <QuiltContainer />
         <a

@@ -7,7 +7,9 @@ const selectStyle = {
   padding: '5px',
   color: 'darkteal',
   background: 'thistle',
-  marginBottom: '30px'
+  marginBottom: '30px',
+  justifyContent: "center",
+  alignItems: "center"
 };
 
 export function QuiltContainer() {
@@ -36,6 +38,9 @@ export function QuiltContainer() {
       </div>
       <div style={pageStyles["column"]}>
         <Quilt quiltType={quiltType}/>
+      </div>
+      <div style={pageStyles["column"]}>
+        <button style={selectStyle}>Create Pattern</button>
       </div>
     </div>
     </div>);
