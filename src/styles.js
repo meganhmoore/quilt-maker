@@ -2,6 +2,12 @@ const textColor = 'thistle';
 const quiltOutlineColor = 'white';
 const fillOptions = ['goldenrod', 'rosybrown', 'olive', 'indianred'];
 
+export const pageStyles = {
+  "column-left": {flex: "50%"},
+  "row": {display: "flex"}
+}
+
+
 export const styles = {
   textColor: textColor,
   quiltOutlineColor: quiltOutlineColor,
@@ -21,45 +27,45 @@ export const shapeStyles = {
   'square': {
   position: 'inherit',
   textAlign: 'center',
-  background: '#ee8',
+  background: 'goldenrod',
   color: '#333',
   fontWeight: 'bold',
   border: '1px solid #333',
   boxSizing: 'border-box',
-  width: '30vw',
-  height: '30vw',
+  width: '8vw',
+  height: '8vw',
 }, 'triangle':{
   position: 'inherit',
   textAlign: 'center',
   fontWeight: 'bold',
 	width: '0px',
 	height: '0px',
-	borderTop: '100px solid #ee8',
-	borderRight: '100px solid transparent',
+	borderTop: '8vw solid goldenrod',
+	borderRight: '8vw solid transparent',
   boxSizing: 'border-box'
 }, 'circle': {
   position: 'inherit',
   textAlign: 'center',
   fontWeight: 'bold',
-  height: '50vw',
-  width: '50vw',
-  backgroundColor: '#ee8',
+  height: '10vw',
+  width: '10vw',
+  backgroundColor: 'goldenrod',
   borderRadius:'50%'
 }, 'semi-circle': {
   position: 'inherit',
   textAlign: 'center',
   fontWeight: 'bold',
-  height: '20vw',
-  width: '40vw',
-  borderTopLeftRadius: '20vw',
-  borderTopRightRadius: '20vw',
-  backgroundColor: '#ee8'
+  height: '6vw',
+  width: '12vw',
+  borderTopLeftRadius: '6vw',
+  borderTopRightRadius: '6vw',
+  backgroundColor: 'goldenrod'
 }, 'arc':{
-    width: '20vw',
-    height: '10vw',
-    borderTopLeftRadius: '13vw',
-    borderTopRightRadius: '13vw',
-    border: '3vw solid gray',
-    borderBottom: '0px',
+    width: '10vw',
+    height: '5vw',
+    borderTopLeftRadius: '7vw',
+    borderTopRightRadius: '7vw',
+    border: '2vw solid goldenrod',
+    borderBottom: '0vw'
 }
 }

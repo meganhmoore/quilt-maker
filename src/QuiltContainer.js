@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Quilt, handleChange} from './Quilt.js';
+import {pageStyles} from './styles.js';
+import {Shape, ShapeTemplate} from './Shape.js';
 
 const selectStyle = {
   padding: '5px',
@@ -24,6 +26,17 @@ export function QuiltContainer() {
     <option value="queen">Queen</option>
     <option value="king">King</option>
     </select>
-    <Quilt quiltType={quiltType}/>
+    <div style={pageStyles["row"]}>
+      <div style={pageStyles["column"]}>
+        <ShapeTemplate id="square" shape="square"/>
+        <ShapeTemplate id="triangle" shape="triangle"/>
+        <ShapeTemplate id="circle" shape="circle"/>
+        <ShapeTemplate id="semi-circle" shape="semi-circle"/>
+        <ShapeTemplate id="arc" shape="arc"/>
+      </div>
+      <div style={pageStyles["column"]}>
+        <Quilt quiltType={quiltType}/>
+      </div>
+    </div>
     </div>);
 }
