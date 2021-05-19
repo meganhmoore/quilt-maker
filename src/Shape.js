@@ -4,6 +4,11 @@ import {shapeStyles} from './styles.js';
 
 export function Shape(props) {
   const shape = props.shape;
+
+  const shapeStyle = (props) => {
+    return shapeStyles[shape];
+  };
+
   const [target, setTarget] = React.useState();
   const [frame, setFrame] = React.useState({
     translate: [0,0],
@@ -94,12 +99,17 @@ export function Shape(props) {
 
 export function ShapeTemplate(props) {
   const shape = props.shape;
+
+  const shapeStyle = (props) => {
+    return shapeStyles[shape];
+  };
+
   const id = props.id;
   const [target, setTarget] = React.useState();
   const [frame, setFrame] = React.useState({
     translate: [0,0],
     rotate: 0,
-    transformOrigin: "50% 50%",
+    transformOrigin: '50% 50%',
   });
 
   React.useEffect(() => {

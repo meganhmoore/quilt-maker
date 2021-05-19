@@ -8,8 +8,8 @@ const selectStyle = {
   color: 'darkteal',
   background: 'thistle',
   marginBottom: '30px',
-  justifyContent: "center",
-  alignItems: "center"
+  justifyContent: 'center',
+  alignItems: 'center'
 };
 
 export function QuiltContainer() {
@@ -20,7 +20,8 @@ export function QuiltContainer() {
     setQuiltType(updatedType);
   };
 
-  return(<div style={{padding:'10px'}}>
+  return(
+  <div style={{padding: '10px'}}>
     <select name="Quilt Size" style={selectStyle} onChange={handleChange}>
     <option value="pillowcase">Pillowcase</option>
     <option value="crib">Crib</option>
@@ -28,20 +29,20 @@ export function QuiltContainer() {
     <option value="queen">Queen</option>
     <option value="king">King</option>
     </select>
-    <div style={pageStyles["row"]}>
-      <div style={pageStyles["column"]}>
-        <ShapeTemplate id="square" shape="square"/>
-        <ShapeTemplate id="triangle" shape="triangle"/>
-        <ShapeTemplate id="circle" shape="circle"/>
-        <ShapeTemplate id="semi-circle" shape="semi-circle"/>
-        <ShapeTemplate id="arc" shape="arc"/>
+    <div style={pageStyles['row']}>
+      <div style={pageStyles['column']}>
+        <ShapeTemplate id='square' shape="square"/>
+        <ShapeTemplate id='triangle' shape="triangle"/>
+        <ShapeTemplate id='circle' shape="circle"/>
+        <ShapeTemplate id='semi-circle' shape="semi-circle"/>
+        {/* <ShapeTemplate id="hexagon" shape="hexagon"/> */}
       </div>
-      <div style={pageStyles["column"]}>
+      <div style={pageStyles['column']}>
         <Quilt quiltType={quiltType}/>
       </div>
-      <div style={pageStyles["column"]}>
+      <div style={pageStyles['column']}>
         <button style={selectStyle}>Create Pattern</button>
       </div>
     </div>
-    </div>);
+  </div>);
 }

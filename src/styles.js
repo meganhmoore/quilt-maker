@@ -3,8 +3,8 @@ const quiltOutlineColor = 'white';
 const fillOptions = ['goldenrod', 'rosybrown', 'olive', 'indianred'];
 
 export const pageStyles = {
-  "column-left": {flex: "50%"},
-  "row": {display: "flex"}
+  columnLeft: {flex: '50%'},
+  row: {display: 'flex'}
 }
 
 
@@ -67,5 +67,21 @@ export const shapeStyles = {
     borderTopRightRadius: '7vw',
     border: '2vw solid goldenrod',
     borderBottom: '0vw'
-}
+ } //'hexagon':{
+//     position: 'inherit',
+//     textAlign: 'center',
+//     fontWeight: 'bold',
+//     fontSize: '135px'
+//     // width: 0,
+//     // borderBottom: '30px solid #6C6',
+//     // borderLeft:' 52px solid transparent',
+//     // borderRight: '52px solid transparent',
+//     // width: '104px',
+//     // height: '60px',
+//     // backgroundColor: '#6C6',
+//     // width: 0,
+//     // borderTop: '30px solid #6C6',
+//     // borderLeft: '52px solid transparent',
+//     // borderRight: '52px solid transparent'
+//   }
 }
