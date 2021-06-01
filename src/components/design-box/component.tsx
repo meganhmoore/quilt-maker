@@ -1,25 +1,20 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Quilt from 'components/quilt';
 
-function classNames(...classes) {
+function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
   }
 
-const quiltTypes: {[type: string]: string} = {'Pillowcase (20x20)': 'pillowcase', 'Crib Quilt': 'crib', 'Queen Quilt': 'queen', 'King Quilt': 'king', 'Custom Dimensions': 'custom'};
-
 const DesignBox: React.FC = () => {
+    const quiltTypes: {[type: string]: string} = {'Pillowcase (20x20)': 'pillowcase', 'Crib Quilt': 'crib', 'Twin Quilt': 'twin', 'Queen Quilt': 'queen', 'King Quilt': 'king', 'Custom Dimensions': 'custom'};
     const typeKeys = Object.keys(quiltTypes)
-    let quiltSize: string = 'crib';
-
-    const setQuiltSize = (setSize: string) => {
-       quiltSize = setSize;
-    };
+    const [quiltSize, setSize] = useState('crib');
 
     const options = typeKeys.map((type) => <Menu.Item>
     {({ active }) => (<a className={classNames(active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 
-    'block px-4 py-2 text-sm')} onClick={() => setQuiltSize(quiltTypes[type])}>{type}</a>)}</Menu.Item>);
+    'block px-4 py-2 text-sm')} onClick={() => setSize(quiltTypes[type])}>{type}</a>)}</Menu.Item>);
 
     
 

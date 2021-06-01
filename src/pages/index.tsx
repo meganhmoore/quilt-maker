@@ -3,7 +3,7 @@ import Header from 'components/header';
 
 const IndexPage: React.FC = () => {
   return <div><Header />
-    <img className="h-fill opacity-70" src={"/hex-quilt.jpeg"}/>
+    <img className="w-screen h-auto opacity-70" src={"/hex-quilt-title.jpeg"}/>
   
   </div>;
 };
