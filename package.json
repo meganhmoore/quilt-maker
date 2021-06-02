@@ -1,42 +1,51 @@
 {
   "name": "quilt-maker",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Design your minimalist quilt and produce scaled patterns",
+  "main": "index.js",
+  "repository": "https://github.com/meganhmoore/quilt-maker-.git",
+  "author": "Megan Moore",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.0",
+    "@types/react": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "autoprefixer": "^9.8.6",
+    "babel-jest": "^27.0.1",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "jest": "^27.0.1",
+    "postcss": "^7.0.35",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
+    "typescript": "^4.2.4"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "konva": "^7.2.5",
+    "@headlessui/react": "^1.2.0",
+    "@heroicons/react": "^1.0.1",
+    "heroicons-react": "^1.4.0",
+    "next": "^10.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-draggable": "^4.4.3",
-    "react-konva": "^17.0.1-3",
-    "react-moveable": "^0.27.6",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.1"
+    "url-loader": "^4.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit",
+    "lint": "eslint ./src --ext ts --ext tsx",
+    "test": "jest",
+    "test-all": "yarn lint && yarn type-check && yarn test"
   }
 }
